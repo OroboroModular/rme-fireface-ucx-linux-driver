@@ -1,0 +1,8 @@
+# RME Fireface UCX in USB vendor mode: let the logged-in user and the audio group open it with
+# libusb (linux/iso_probe.py, later the mixer app). Install:
+#
+#   sudo cp linux/70-fireface-ucx.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload && sudo udevadm trigger --attr-match=idVendor=2a39
+#
+# Numbered below 73 so the uaccess tag is applied.
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="2a39", ATTR{idProduct}=="3fc9", MODE="0660", GROUP="audio", TAG+="uaccess"

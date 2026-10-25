@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=UCX Mixer
+GenericName=Audio interface mixer
+Comment=Mixer for the RME Fireface UCX: submixes, meters, EQ and dynamics
+Exec=@BIN@/ucx-mixer
+Icon=audio-card
+Terminal=false
+Categories=AudioVideo;Audio;Mixer;
+Keywords=Fireface;RME;TotalMix;mixer;

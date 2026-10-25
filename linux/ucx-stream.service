@@ -1,0 +1,16 @@
+# The Fireface UCX in PipeWire through the userspace driver, started with the session
+# (linux/install-user.sh installs it; `systemctl --user enable --now ucx-stream` turns it on).
+# Not together with the kernel driver: both need the unit's audio interface. Without the unit,
+# or when it's unplugged, ucx-stream exits and is started again a few seconds later.
+[Unit]
+Description=Fireface UCX in PipeWire (ucx-stream)
+After=pipewire.service wireplumber.service
+Wants=pipewire.service
+
+[Service]
+ExecStart=@BIN@/ucx-stream pipewire --rate 48000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

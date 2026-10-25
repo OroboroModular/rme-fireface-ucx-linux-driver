@@ -1,0 +1,11 @@
+[package]
+name = "ucx-usb"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-2.0-or-later"
+description = "The Fireface UCX through Linux usbfs: control, bulk and iso transfers on its device node"
+publish = false
+
+[dependencies]
+libc = "0.2"
+ucx-protocol = { path = "../ucx-protocol" }

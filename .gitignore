@@ -1,0 +1,19 @@
+/target/
+__pycache__/
+*.pyc
+
+# Derived from the captures by tools/pcap_summary.py --controls
+re/captures/*.controls.txt
+
+# Left over from an abandoned capture session
+re/captures/11-push-triggers.marks
+
+# Kernel module build products (linux/kernel)
+linux/kernel/*.o
+linux/kernel/*.ko
+linux/kernel/*.mod
+linux/kernel/*.mod.c
+linux/kernel/.*.cmd
+linux/kernel/Module.symvers
+linux/kernel/modules.order
+linux/kernel/.module-common.o

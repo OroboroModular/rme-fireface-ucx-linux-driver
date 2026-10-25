@@ -1,0 +1,3 @@
+[workspace]
+resolver = "2"
+members = ["crates/ucx-protocol", "crates/ucx-usb", "crates/ucx-mixer", "crates/ucx-mixer-app", "crates/ucx-stream"]

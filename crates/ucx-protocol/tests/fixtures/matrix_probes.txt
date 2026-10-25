@@ -1,0 +1,6 @@
+# playback fader probes (stereo strips, balance centre): TotalMix display dB, matrix value written
+-32.6 02fd
+-12.1 1fb1
+-2.2 8c69
+6.0 9fec
+0.0 9000

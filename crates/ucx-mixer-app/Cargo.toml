@@ -1,0 +1,22 @@
+[package]
+name = "ucx-mixer-app"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-2.0-or-later"
+description = "A mixer for the Fireface UCX on Linux, in the Oroboro look: TotalMix's strips and submixes, live meters"
+publish = false
+
+[[bin]]
+name = "ucx-mixer"
+path = "src/main.rs"
+
+[dependencies]
+# egui 0.34, as the vendored look has it
+eframe = { version = "0.34", default-features = false, features = ["glow", "x11", "wayland"] }
+oroboro_egui = { path = "../../vendor/oroboro_egui" }
+ucx-mixer = { path = "../ucx-mixer" }
+ucx-protocol = { path = "../ucx-protocol" }
+ucx-usb = { path = "../ucx-usb" }
+# the window's state between runs
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

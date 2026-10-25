@@ -1,0 +1,13 @@
+[package]
+name = "ucx-stream"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-2.0-or-later"
+description = "Fireface UCX audio streaming on Linux from userspace: iso transfers through usbfs, OUT locked to the unit's frame clock"
+publish = false
+
+[dependencies]
+libc = "0.2"
+ucx-mixer = { path = "../ucx-mixer" }
+ucx-protocol = { path = "../ucx-protocol" }
+ucx-usb = { path = "../ucx-usb" }

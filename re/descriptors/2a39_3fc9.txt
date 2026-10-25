@@ -1,0 +1,77 @@
+hub \\?\usb#vid_05e3&pid_0610#6&2d7b94ff&0&3#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 4 address 4 speed high active config 1
+DEVICE bcdUSB=0x0200 class=0xff/0x00/0x00 bMaxPacketSize0=64 VID=0x2a39 PID=0x3fc9 bcdDevice=0x0001 bNumConfigurations=1
+  manufacturer='RME' product='Fireface UCX (<serial>)' serial='<USB serial>'
+OPEN PIPES (as configured by the Windows driver):
+  EP 0x0e OUT isochronous sync=none usage=data wMaxPacketSize=0x0000 (0 x1) bInterval=1
+  EP 0x8f IN  isochronous sync=none usage=data wMaxPacketSize=0x0000 (0 x1) bInterval=1
+  EP 0x0c OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x8d IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x85 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x07 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x86 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x88 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x09 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x8b IN  interrupt wMaxPacketSize=0x0004 (4 x1) bInterval=1
+  EP 0x01 OUT interrupt wMaxPacketSize=0x0240 (576 x1) bInterval=1
+  EP 0x82 IN  interrupt wMaxPacketSize=0x0240 (576 x1) bInterval=1
+  EP 0x03 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  EP 0x84 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+--- configuration index 0 ---
+CONFIG wTotalLength=424 bNumInterfaces=6 bConfigurationValue=1 bmAttributes=0xc0 MaxPower=100mA
+  INTERFACE 0 alt 0: bNumEndpoints=2 class=0xff sub=0x00 proto=0x00
+    EP 0x0e OUT isochronous sync=none usage=data wMaxPacketSize=0x0000 (0 x1) bInterval=1
+    EP 0x8f IN  isochronous sync=none usage=data wMaxPacketSize=0x0000 (0 x1) bInterval=1
+  INTERFACE 0 alt 1: bNumEndpoints=2 class=0xff sub=0x00 proto=0x00
+    EP 0x0e OUT isochronous sync=none usage=data wMaxPacketSize=0x0214 (532 x1) bInterval=1
+    EP 0x8f IN  isochronous sync=none usage=data wMaxPacketSize=0x01fc (508 x1) bInterval=1
+  INTERFACE 0 alt 2: bNumEndpoints=2 class=0xff sub=0x00 proto=0x00
+    EP 0x0e OUT isochronous sync=none usage=data wMaxPacketSize=0x030c (780 x1) bInterval=1
+    EP 0x8f IN  isochronous sync=none usage=data wMaxPacketSize=0x02dc (732 x1) bInterval=1
+  INTERFACE 0 alt 3: bNumEndpoints=2 class=0xff sub=0x00 proto=0x00
+    EP 0x0e OUT isochronous sync=none usage=data wMaxPacketSize=0x0a8c (652 x2) bInterval=1
+    EP 0x8f IN  isochronous sync=none usage=data wMaxPacketSize=0x0a5c (604 x2) bInterval=1
+  INTERFACE 1 alt 0: bNumEndpoints=3 class=0xff sub=0x00 proto=0x00
+    EP 0x0c OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    EP 0x8d IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    EP 0x85 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  INTERFACE 2 alt 0: bNumEndpoints=2 class=0x01 sub=0x03 proto=0x00
+    [type 0x24 len 7] 07 24 01 00 01 61 00
+    [type 0x24 len 9] 09 24 03 01 03 01 02 01 04
+    [type 0x24 len 6] 06 24 02 02 02 04
+    [type 0x24 len 9] 09 24 03 01 07 01 06 01 05
+    [type 0x24 len 6] 06 24 02 02 06 05
+    [type 0x24 len 6] 06 24 02 01 01 04
+    [type 0x24 len 9] 09 24 03 02 04 01 01 01 04
+    [type 0x24 len 6] 06 24 02 01 05 05
+    [type 0x24 len 9] 09 24 03 02 08 01 05 01 05
+    EP 0x07 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    [type 0x25 len 6] 06 25 01 02 01 05
+    EP 0x86 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    [type 0x25 len 6] 06 25 01 02 03 07
+  INTERFACE 3 alt 0: bNumEndpoints=2 class=0xff sub=0x00 proto=0x00
+    EP 0x88 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    EP 0x09 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  INTERFACE 4 alt 0: bNumEndpoints=1 class=0xff sub=0x00 proto=0x00
+    EP 0x8b IN  interrupt wMaxPacketSize=0x0004 (4 x1) bInterval=1
+  INTERFACE 5 alt 0: bNumEndpoints=4 class=0xff sub=0x00 proto=0x00
+    EP 0x01 OUT interrupt wMaxPacketSize=0x0040 (64 x1) bInterval=1
+    EP 0x82 IN  interrupt wMaxPacketSize=0x0040 (64 x1) bInterval=1
+    EP 0x03 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    EP 0x84 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  INTERFACE 5 alt 1: bNumEndpoints=4 class=0xff sub=0x00 proto=0x00
+    EP 0x01 OUT interrupt wMaxPacketSize=0x0240 (576 x1) bInterval=1
+    EP 0x82 IN  interrupt wMaxPacketSize=0x0240 (576 x1) bInterval=1
+    EP 0x03 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    EP 0x84 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  INTERFACE 5 alt 2: bNumEndpoints=4 class=0xff sub=0x00 proto=0x00
+    EP 0x01 OUT interrupt wMaxPacketSize=0x0380 (896 x1) bInterval=1
+    EP 0x82 IN  interrupt wMaxPacketSize=0x0380 (896 x1) bInterval=1
+    EP 0x03 OUT bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+    EP 0x84 IN  bulk wMaxPacketSize=0x0200 (512 x1) bInterval=0
+  INTERFACE 5 alt 3: bNumEndpoints=4 class=0xff sub=0x00 proto=0x00
+    EP 0x01 OUT interrupt wMaxPacketSize=0x0300 (768 x1) bInterval=1
+    EP 0x82 IN  interrupt wMaxPacketSize=0x0300 (768 x1) bInterval=1
+    EP 0x03 OUT interrupt wMaxPacketSize=0x0300 (768 x1) bInterval=1
+    EP 0x84 IN  interrupt wMaxPacketSize=0x0300 (768 x1) bInterval=1
+  (interface 2 alt 0 name: 'Fireface UCX (<serial>)')
+DEVICE_QUALIFIER 0a 06 00 02 ff 00 00 40 00 00
